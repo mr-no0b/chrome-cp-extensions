@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "CF Status Rating Column",
+  "version": "1.0",
+  "description": "Adds a Rating column to Codeforces status page.",
+  "host_permissions": [
+    "https://codeforces.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://codeforces.com/problemset/status*",
+        "https://codeforces.com/contest/*/status*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
+
